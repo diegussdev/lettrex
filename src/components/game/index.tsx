@@ -1,3 +1,4 @@
+//@ts-nocheck
 import { useSelector } from 'react-redux';
 import { StyledGame } from '../../styles/components/game/game';
 import Word from './word';

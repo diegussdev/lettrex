@@ -1,3 +1,4 @@
+//@ts-nocheck
 import { useDispatch, useSelector } from 'react-redux';
 import { incrementCurrentWord } from '../../../store/actions/game';
 import { StyledKey } from '../../../styles/components/keyboard/key/key';

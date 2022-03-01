@@ -1,3 +1,4 @@
+//@ts-nocheck
 import { StyledLetter } from '../../../../styles/components/game/letter';
 
 interface Key {

@@ -19,10 +19,4 @@ export const StyledKey = styled.div`
   :hover {
     cursor: pointer;
   }
-
-  :hover {
-    /* background-color: ${props => props.theme.colors.successBackground};
-    border: 2px solid ${props => props.theme.colors.successBackground};
-    color: ${props => props.theme.colors.successText}; */
-  }
 `;

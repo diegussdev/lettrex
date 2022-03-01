@@ -1,5 +1,6 @@
+//@ts-nocheck
 import { HYDRATE } from 'next-redux-wrapper';
-import { DECREMENT_CURRENT_WORD, INCREMENT_CURRENT_WORD, SUBMIT_WORD, UPDATE_CURRENT_WORD, UPDATE_GAME_STATUS } from '../../actions';
+import { DECREMENT_CURRENT_WORD, INCREMENT_CURRENT_WORD, SUBMIT_WORD, UPDATE_GAME_STATUS } from '../../actions';
 import { daysWords } from './daysWord';
 import { words } from './words';
 
