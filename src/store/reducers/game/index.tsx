@@ -55,8 +55,7 @@ const reducer = (state = initialState, action) => {
       var newState = { ...state, ...action.payload };
 
       var storage = JSON.parse(localStorage.getItem('lettrex'));
-      console.log(storage);
-      console.log(day);
+
       if (storage && storage.day != day) {
         
         storage = {

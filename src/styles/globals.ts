@@ -20,13 +20,13 @@ export default createGlobalStyle`
 
   .displaced {
     background-color: ${props => props.theme.colors.warningBackground} !important;
-    border-color: ${props => props.theme.colors.warningBackground};
+    border-color: ${props => props.theme.colors.warningBackground} !important;
     color: ${props => props.theme.colors.background};
   }
 
   .right {
     background-color: ${props => props.theme.colors.successBackground} !important;
-    border-color: ${props => props.theme.colors.successBackground};
+    border-color: ${props => props.theme.colors.successBackground} !important;
     color: ${props => props.theme.colors.background};
   }
 
@@ -36,7 +36,7 @@ export default createGlobalStyle`
 
   .wrong {
     background-color: ${props => props.theme.colors.errorBackground} !important;
-    border-color: ${props => props.theme.colors.errorBackground};
+    border-color: ${props => props.theme.colors.errorBackground} !important;
     color: ${props => props.theme.colors.background};
   }
 `;

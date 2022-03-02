@@ -1,14 +1,18 @@
+//@ts-nocheck
 import React, { useEffect } from 'react';
 import Head from 'next/head';
 
 import Header from '../components/header';
 import Keyboard from '../components/keyboard';
 import Game from '../components/game';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { updateGameStatus } from '../store/actions/game';
+import Finish from '../components/finish';
 
 export default function Home() {
   const dispatch = useDispatch();
+
+  const { finish } = useSelector((state) => state.game);
 
   useEffect(() => {  
     var lettrex = localStorage.getItem('lettrex');
@@ -27,7 +31,11 @@ export default function Home() {
       <div style={{ height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center' }}>
         <Header />
         <Game />
-        <Keyboard />
+        {
+          finish
+            ? <Finish />
+            : <Keyboard />
+        }          
       </div>
     </>
   );

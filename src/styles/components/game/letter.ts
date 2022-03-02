@@ -10,8 +10,9 @@ export const StyledLetter = styled.div`
   justify-content: center;
   align-items: center;
 
+  background-color: ${props => props.theme.colors.neutralBackground};
   border: 2px solid ${props => props.theme.colors.neutralBackground};
-  border-radius: 5px;
+  border-radius: 6px;
 
   font-size: 26px;
   text-transform: uppercase;

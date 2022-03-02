@@ -9,8 +9,8 @@ export const StyledKey = styled.div`
   justify-content: center;
   align-items: center;
 
-  border: 1.5px solid ${props => props.theme.colors.text};
-  border-radius: 5px;
+  border: 2px solid ${props => props.theme.colors.text};
+  border-radius: 6px;
 
   text-transform: uppercase;
   font-weight: 700;

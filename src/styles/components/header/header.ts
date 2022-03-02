@@ -5,7 +5,6 @@ export const StyledHeader = styled.div`
   max-width: ${props => props.theme.sizes.maxWidth};
   height: ${props => props.theme.sizes.header};
   padding: 5px 25px;
-  /* margin: auto; */
 
   display: flex;
   justify-content: space-between;
@@ -13,7 +12,8 @@ export const StyledHeader = styled.div`
   flex-direction: row;
 
   h1 {
-    font-size: 28px;
+    font: 400 30px Paytone One, sans-serif;
+    letter-spacing: 2.5px;
     color: ${props => props.theme.colors.primary};
     text-transform: uppercase;
   }

@@ -1,21 +1,22 @@
 const theme = {
   colors: {
-    background: '#3E2A38',
+    background: '#253342',
     text: '#e1e1e6',
-    primary: '#DAF7A6',
+    primary: '#67be9b',
         
-    neutralBackground: '#1A0915',
+    neutralBackground: '#212C37',
     
-    successBackground: '#DAF7A6',
+    successBackground: '#67be9b',
 
-    warningBackground: '#FFC300',
+    warningBackground: '#fcbf6b',
 
     errorBackground: '#B95F7A',
   },
   sizes: {
     maxWidth: '720px',
-    header: '45px',
+    header: '50px',
     keyboard: '32vh',
+    finish: '20vh',
     ads: '0px',
   }
 

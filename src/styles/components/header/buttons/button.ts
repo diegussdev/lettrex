@@ -9,6 +9,10 @@ export const StyledButton = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  a {
+    text-decoration: none;
+  }
   
   svg {
     width: 100%;
@@ -16,12 +20,8 @@ export const StyledButton = styled.div`
     padding: 10%;
     
     border: 1.5px solid ${props => props.theme.colors.primary};
-    border-radius: 20%;
+    border-radius: 6px;
     
     fill: ${props => props.theme.colors.primary};
-  }
-
-  svg:hover {
-    cursor: pointer;
   }
 `;
