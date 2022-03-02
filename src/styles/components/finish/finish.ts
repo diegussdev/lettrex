@@ -7,7 +7,6 @@ export const StyledFinish = styled.div`
   padding: 5px 25px;
 
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;

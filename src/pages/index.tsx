@@ -31,11 +31,7 @@ export default function Home() {
       <div style={{ height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center' }}>
         <Header />
         <Game />
-        {
-          finish
-            ? <Finish />
-            : <Keyboard />
-        }          
+        { !finish ? <Keyboard /> : <Finish /> }       
       </div>
     </>
   );
