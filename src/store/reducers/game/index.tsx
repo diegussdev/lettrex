@@ -92,7 +92,7 @@ const reducer = (state = initialState, action) => {
       var validWord = '';
       var tries = [ ...state.tries ];
 
-      if (state.dayWord == currentWord){
+      if (state.dayWord.normalize('NFD').replace(/[\u0300-\u036f]/g, '') == currentWord){
         tries.push(dayWordArr);
         newState = { ...newState, ...{ tries: tries, won: { status: true, try: state.currentWordPosition }, finish: true, currentWordPosition: state.currentWordPosition + 1, currentWord: [] } };
       } else if (validWord = validateWord(currentWord)) {
@@ -141,7 +141,7 @@ const reducer = (state = initialState, action) => {
             var countLettersCurrentWord = currentWord.split(letter.letter).length - 1;
             var countLettersDayWord =  state.dayWord.normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(letter.letter).length - 1;
             
-            if (countLettersCurrentWord > countLettersDayWord) {
+            if (countLettersCurrentWord >= countLettersDayWord) {
               tryWord.push({ letter: letter.letter, status: 'wrong' });
               continue;
             }
