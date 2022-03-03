@@ -141,7 +141,7 @@ const reducer = (state = initialState, action) => {
             var countLettersCurrentWord = currentWord.split(letter.letter).length - 1;
             var countLettersDayWord =  state.dayWord.normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(letter.letter).length - 1;
             
-            if (countLettersCurrentWord >= countLettersDayWord) {
+            if (countLettersCurrentWord > countLettersDayWord) {
               tryWord.push({ letter: letter.letter, status: 'wrong' });
               continue;
             }
