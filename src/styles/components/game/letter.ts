@@ -14,7 +14,7 @@ export const StyledLetter = styled.div`
   border: 2px solid ${props => props.theme.colors.neutralBackground};
   border-radius: 6px;
 
-  font-size: 26px;
+  font-size: 36px;
   text-transform: uppercase;
   font-weight: bold;
 `;

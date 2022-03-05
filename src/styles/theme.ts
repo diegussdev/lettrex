@@ -1,6 +1,6 @@
 const theme = {
   colors: {
-    background: '#253342',
+    background: '#283C51',
     text: '#e1e1e6',
     primary: '#67be9b',
         
@@ -15,7 +15,7 @@ const theme = {
   sizes: {
     maxWidth: '720px',
     header: '50px',
-    keyboard: '32vh',
+    keyboard: '35vh',
     finish: '20vh',
     ads: '0px',
   }
