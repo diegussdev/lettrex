@@ -32,4 +32,15 @@ export const StyledFinish = styled.div`
     font: 400 18px Paytone One, sans-serif;
     line-height: 18px;
   }
+
+  div.new-try {
+    font: 400 16px Paytone One, sans-serif;
+    text-transform: uppercase;
+    background-color: ${props => props.theme.colors.successBackground};
+    color: ${props => props.theme.colors.background};
+    padding: 5px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
 `;

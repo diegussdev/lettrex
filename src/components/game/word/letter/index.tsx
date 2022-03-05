@@ -1,8 +1,8 @@
-//@ts-nocheck
+import { GameLetter } from '../../../../store/reducers/game';
 import { StyledLetter } from '../../../../styles/components/game/letter';
 
 interface Key {
-  letter: object;
+  letter: GameLetter;
   isCurrentWordPosition: boolean
 }
 

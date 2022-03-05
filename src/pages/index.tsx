@@ -1,4 +1,3 @@
-//@ts-nocheck
 import React, { useEffect } from 'react';
 import Head from 'next/head';
 
@@ -8,11 +7,12 @@ import Game from '../components/game';
 import { useDispatch, useSelector } from 'react-redux';
 import { updateGameStatus } from '../store/actions/game';
 import Finish from '../components/finish';
+import { GameReducer } from '../store/reducers';
 
 export default function Home() {
   const dispatch = useDispatch();
 
-  const { finish } = useSelector((state) => state.game);
+  const { finish } = useSelector((state: GameReducer) => state.game);
 
   useEffect(() => {  
     var lettrex = localStorage.getItem('lettrex');

@@ -1,4 +1,4 @@
-import { DECREMENT_CURRENT_WORD, INCREMENT_CURRENT_WORD, SUBMIT_WORD, UPDATE_GAME_STATUS } from '..';
+import { ACCEPT_NEW_TRY, DECREMENT_CURRENT_WORD, INCREMENT_CURRENT_WORD, SUBMIT_WORD, UPDATE_GAME_STATUS } from '..';
 
 export const updateGameStatus = (status) => ({
   type: UPDATE_GAME_STATUS,
@@ -16,4 +16,8 @@ export const incrementCurrentWord = (letter) => ({
 
 export const decrementCurrentWord = () => ({
   type: DECREMENT_CURRENT_WORD
+});
+
+export const acceptNewTry = () => ({
+  type: ACCEPT_NEW_TRY
 });
